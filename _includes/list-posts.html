@@ -1,3 +1,23 @@
 {% for post in include.posts %}
-	<li class="blog-post">{% include post-summary.html post=post %}</li>
+	<li class="blog-post">
+		{% for category in post.categories %}
+			<span class="blog-filter">
+				<a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category | capitalize }}</a>
+			</span>
+		{% endfor %}
+		{% if post.author %}
+			&bull;
+			{% assign author = site.data.author | where: "username", post.author | first %}
+			{% if author.url %}
+				<a href="{{ author.url }}">{{ author.name }}</a>
+			{% elsif author.twitter %}
+				<a href="{{ author.twitter | prepend: 'https://twitter.com/' }}">{{ author.name }}</a>
+			{% else %}
+				{{ author.name }}
+			{% endif %}
+			&bull;
+		{% endif %}
+		{{ post.date | date: "%B %d, %Y" }}
+		{% include post-summary.html post=post %}
+	</li>
 {% endfor %}

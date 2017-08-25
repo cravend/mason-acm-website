@@ -4,5 +4,19 @@
 			<a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category | capitalize }}</a>
 		</span>
 	{% endfor %}
-	<span class="post-date">{{ include.post.date | date: "%B %d, %Y" }}</span>
+	<span class="post-date">
+	{% if page.author %}
+	&bull;
+		{% assign author = site.data.author | where: "username", page.author | first %}
+		{% if author.url %}
+			<a href="{{ author.url }}">{{ author.name }}</a>
+		{% elsif author.twitter %}
+			<a href="{{ author.twitter | prepend: 'https://twitter.com/' }}">{{ author.name }}</a>
+		{% else %}
+			{{ author.name }}
+		{% endif %}
+		&bull;
+	{% endif %}
+	{{ include.post.date | date: "%B %d, %Y" }}
+</span>
 </p>

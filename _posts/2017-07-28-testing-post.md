@@ -1,5 +1,5 @@
 ---
-title: Effective Upselling Techniques
+title: Test
 categories:
   - sales
   - tips
