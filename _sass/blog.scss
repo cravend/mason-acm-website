@@ -38,12 +38,17 @@
 
 		a {
 			text-decoration: none;
+			font-style: normal !important;
 		}
 
 		.post-date {
 			position: relative;
 			top: -3px;
 			margin-left: 5px;
+
+			a {
+				font-style: normal !important;
+			}
 		}
 
 		&:after {
@@ -69,10 +74,12 @@
 
 	a {
 		background: #eee;
-		padding: 3px 5px;
+		padding: 8px 10px;
 		font-size: .8em;
 		border-radius: 5px;
-		color: #888;
+		color: #888 !important;
+		text-decoration: none !important;
+
 		transition: .2s ease-in-out;
 
 		&:hover {

@@ -95,7 +95,8 @@ section {
 
 		a:not(.button) {
 			color: #ffffff;
-			font-style: italic;
+			// font-style: italic;
+			text-decoration: underline;
 		}
 	}
 
@@ -243,5 +244,25 @@ section {
 	&,
 	p {
 		color: #fefefe;
+	}
+}
+
+@media #{$phone} {
+	section {
+		padding: 100px 0;
+
+		&.diagonal {
+			-webkit-transform: none;
+			-moz-transform: none;
+			-ms-transform: none;
+			transform: none;
+
+			> div {
+				-webkit-transform: none;
+				-moz-transform: none;
+				-ms-transform: none;
+				transform: none;
+			}
+		}
 	}
 }

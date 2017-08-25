@@ -1,34 +1,29 @@
 title: Mason ACM
-url: "http://mysterious-plant.cloudvent.net"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+url: "https://acm.masonhackclub.tech"
+email: wmhsacm@gmail.com
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
-
-# Author details for the jekyll-seo-tag gem
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+description: William Mason High School's student chapter of the Association for Computing Machinery.
 
 # Social details for the jekyll-seo-tag gem
 social:
   name: Mason ACM
   links:
+    - https://twitter.com/mason_acm
     - https://github.com/cravend/mason-acm-website
+
+twitter:
+  username: mason_acm
 
 collections:
   staff_members:
     output: false
   clients:
-    output: true
+    output: false
 
 paginate: 10
 paginate_path: "/blog/:num/"
-permalink: pretty
+permalink: "/blog/:title"
 
 jekyll-archives:
   enabled:
@@ -61,9 +56,6 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-
-# -----------
-# CloudCannon
 
 social_icons:
   # - Facebook

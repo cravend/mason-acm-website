@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,400i,700,700i" rel="stylesheet">
+
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 
 	<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
@@ -38,33 +40,11 @@
 
 		<footer class="diagonal">
 			<div class="container">
-				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Update Footer Sections</a></p>
-
 				<div class="footer-columns">
-					{% for column in site.data.footer %}
-						<ul class="footer-links">
-							<li>
-								<h2>{{ column.title }}</h2>
-							</li>
-							{% for link in column.links %}
-								<li>
-									<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
-										{% if link.social_icon %}
-											{% include social-icon.html icon=link.social_icon %}
-										{% endif %}
-
-										{{ link.name }}
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-					{% endfor %}
-
 					<ul class="footer-links">
-						<li>
-							<h2>{{ site.data.company.title }}</h2>
-						</li>
-						<li>{{ site.data.company.description }}</li>
+						<li><h2>{{ site.title }}</h2></li>
+						<li>{{ site.description }}</li>
+						<li><a href="{{ site.twitter.username | prepend: 'https://twitter.com/' }}" target="_blank">{% include social-icon.html icon="Twitter" %} Follow us on Twitter</a></li>
 						<li><a href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %} Subscribe with RSS</a></li>
 					</ul>
 				</div>
@@ -72,9 +52,11 @@
 
 			<div class="legal-line">
 				<p class="container">
-					&copy; {{ site.time | date: '%Y' }} {{ site.data.company.title }}
+					&copy; {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.data.company.title }}</a>
 					&bull;
 					Template by <a href="http://cloudcannon.com/">CloudCannon</a>
+					&bull;
+					Design by <a href="https://daltoncraven.tech/">Dalton Craven</a>
 				</p>
 			</div>
 		</footer>
