@@ -2,12 +2,9 @@
 ---
 
 $pattern: "{{ site.baseurl }}/images/pattern.png";
-$screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
-
 $brand-color: #1d7341;
 $html-background-color: #222;
 $secondary-brand-color: #5A9974;
-$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
 
 // Breakpoints
 $phone: "(max-width: 450px)";
@@ -15,11 +12,11 @@ $tablet: "(min-width: 450px)";
 $mid-point: "(min-width: 620px)";
 $desktop: "(min-width: 768px)";
 
-$section-rotation: 5deg;
+$section-rotation: 4deg;
 
-$font-family-header: "Roboto Condensed", Arial, sans-serif;
+$font-family-header: "Josefin Sans", Arial, sans-serif;
 
-$font-family-body: "Roboto", Arial, sans-serif;
+$font-family-body: "Lato", Arial, sans-serif;
 
 @import "elements";
 @import "layout";
