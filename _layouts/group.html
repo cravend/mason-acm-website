@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="hero diagonal">
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<h2>{{ page.groupname }}</h2>
+		<p class="subtext">Run by {{ page.leaders }}</p>
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<h2>About {{ page.groupname }}</h2>
+		<p>{{ page.description }}</p>
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<h2>{{ page.tagline }}</h2>
+		{% for feature in page.features %}
+			<h3>{{ feature.title }}</h3>
+			<p>{{ feature.description }}</p>
+		{% endfor %}
+	</div>
+</section>

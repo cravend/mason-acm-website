@@ -67,3 +67,8 @@ social_icons:
   - Twitter
   - YouTube
   # - RSS
+
+page_gen:
+- data: group
+  name: name
+  dir: groups
