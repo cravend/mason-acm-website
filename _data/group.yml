@@ -1,30 +1,30 @@
 - name: networking
   groupname: "Networking"
-  description: "This page contains information about the LAN Party, which usually occurs twice a year, once on the last day before winter break, and once sometime after AP testing."
-  leaders: "Andrew Sisson"
+  leaders: andrew, dalton
   icon: television
+  description: "This page contains information about the LAN Party, which usually occurs twice a year, once on the last day before winter break, and once sometime after AP testing."
 
 - name: web-development
   groupname: "Web Development"
   description: "We primarily focus on developing and extending the Mason ACM website (hint: this is the Mason ACM website)."
+  leaders: dalton
+  icon: code
   features:
     - title: "General Information"
       description: "We will be working a lot with the mobile special interest group to integrate features that work across both platforms. We plan to have multiple website redesigns to make the website as responsive and user friendly as possible. We will be using frameworks such as Laravel to make the website. The website will also be responsive on the mobile web, so users not on supported platforms can still view the website on their mobile browsers."
     - title: "Membership"
-      description: "Come talk to one of of the chairmen if you are interested in contributing to the website. We will primarily need content writers and bug testers to find bugs on the website. If you have any features that you want to add to the website, come talk to us and we can try to implement it."
+      description: "Come talk to one of the chairmen if you are interested in contributing to the website. We will primarily need content writers and bug testers to find bugs on the website. If you have any features that you want to add to the website, come talk to us and we can try to implement it."
     - title: "Master Classes"
       description: "Every now and then, INTERalliance will host a PHP Master class. This is a great way to get your feet wet with web development. If you are interested in making websites or contributing to the Mason ACM website then it is highly recommended that you go. INTERalliance may also have other master classes in Django or Rails."
-  leaders: "Dalton Craven"
-  icon: code
 
 - name: robotics
   groupname: "Robotics"
   description: "We primarily focus on developing and extending the Mason ACM website (hint: this is the Mason ACM website). It's written in PHP, specifically the Laravel framework, and uses Bootstrap, MySQL, and Git. The souce code is located here.."
-  leaders: "Dalton Craven"
+  leaders: dalton
   icon: question
 
 - name: programming-contests
   groupname: "Programming Contests"
   description: "We primarily focus on developing and extending the Mason ACM website (hint: this is the Mason ACM website). It's written in PHP, specifically the Laravel framework, and uses Bootstrap, MySQL, and Git. The souce code is located here.."
-  leaders: "Dalton Craven"
+  leaders: dalton
   icon: question
