@@ -1,38 +1,35 @@
+# jekyll-seo-tag
 title: Mason ACM
 url: "https://acm.masonhackclub.tech"
 email: wmhsacm@gmail.com
-
-# Default description in social shares for the jekyll-seo-tag gem
 description: William Mason High School's student chapter of the Association for Computing Machinery.
-
-# Social details for the jekyll-seo-tag gem
+twitter:
+  username: mason_acm
+logo: /images/logo.png
 social:
-  name: Mason ACM
   links:
     - https://twitter.com/mason_acm
     - https://github.com/cravend/mason-acm-website
 
-twitter:
-  username: mason_acm
+# jekyll-archives
+jekyll-archives:
+  enabled:
+    - "categories"
 
-collections:
-  staff_members:
-    output: false
-  clients:
-    output: false
+# data page generator
+page_gen:
+- data: group
+  name: name
+  dir: groups
+
+# general
 
 paginate: 10
 paginate_path: "/blog/:num/"
 permalink: "/blog/:title"
 
-jekyll-archives:
-  enabled:
-    - "categories"
-
 gems:
-  - "jekyll-feed"
   - "jekyll-seo-tag"
-  - "jekyll-paginate"
   - "jekyll-archives"
 
 defaults:
@@ -41,34 +38,3 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "clients"
-    values:
-      layout: "client"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "index.html"
-      type: "pages"
-    values:
-      layout: "default"
-
-social_icons:
-  # - Facebook
-  # - Google Plus
-  # - Instagram
-  # - LinkedIn
-  # - Pinterest
-  # - Tumblr
-  - Twitter
-  - YouTube
-  # - RSS
-
-page_gen:
-- data: group
-  name: name
-  dir: groups

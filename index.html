@@ -1,12 +1,12 @@
 ---
 title: Home
+layout: default
 ---
 
 <section class="hero diagonal">
 	<div class="container">
 		<h2>Mason ACM</h2>
 		<p class="subtext editable">The Mason ACM is part of an international organization, ACM. ACM is an organization for computing professionals to deliver resources that advance computing as a science and a profession.</p>
-		<!-- <p><a class="button" href="{{ site.baseurl }}/contact/">Contact Us</a></p> -->
 	</div>
 </section>
 
@@ -25,7 +25,6 @@ title: Home
 		{% for group in site.data.group %}
 			<div class="groups split">
 				<div class="icons">
-					<!-- <a href="{{ site.baseurl }}/groups/{{ group.name }}"><img src="/images/{{ group.image }}" /></a> -->
 					<a href="{{ site.baseurl }}/groups/{{ group.name }}"><p><i class="fa fa-{{ group.icon }} fa-5x" aria-hidden="true"></i></p></a>
 				</div>
 				<div>

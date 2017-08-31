@@ -16,19 +16,7 @@
 	<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
 
 	{% seo %}
-	{% feed_meta %}
-
-	{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-		<script>
-			(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
-
-			ga("create", "{{ site.google_analytics_key }}", "auto");
-			ga("send", "pageview");
-		</script>
-	{% endif %}
+	
 	<script src="https://use.fontawesome.com/b7382f697b.js"></script>
 </head>
 	<body>
@@ -44,19 +32,19 @@
 			<div class="container">
 				<div class="footer-columns">
 					<ul class="footer-links">
-						<li><h2>{{ site.title }}</h2></li>
+						<li><a href="{{ site.url }}"><h2>{{ site.title }}</h2></a></li>
 						<li>{{ site.description }}</li>
-						<li><a href="{{ site.twitter.username | prepend: 'https://twitter.com/' }}" target="_blank">{% include social-icon.html icon="Twitter" %} Follow us on Twitter</a></li>
-						<li><a href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %} Subscribe with RSS</a></li>
+						<li><a href="{{ site.twitter.username | prepend: 'https://twitter.com/' }}" target="_blank">{% include social-icon.html icon="Twitter" %}Follow us on Twitter</a></li>
+						<li><a href="https://schoology.com/group/1139815226" target="_blank">{% include social-icon.html icon="Schoology" %}Find us on Schoology</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="legal-line">
 				<p class="container">
-					&copy; {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.data.company.title }}</a>
+					&copy; {{ site.time | date: '%Y' }}
 					&bull;
-					Template by <a href="http://cloudcannon.com/">CloudCannon</a>
+					Template by <a href="https://cloudcannon.com/">CloudCannon</a>
 					&bull;
 					Design by <a href="https://daltoncraven.tech/">Dalton Craven</a>
 				</p>
