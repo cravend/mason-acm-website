@@ -6,7 +6,7 @@ This is the official website for [Mason ACM](http://masonacm.org).
 
 Mason ACM was built with [Jekyll](http://jekyllrb.com/) version 3.5.1. You can learn how to install Jekyll [here](https://jekyllrb.com/docs/installation/).
 
-Install the dependencies with [Bundler](http://bundler.io/) (you should only do this once):
+Install the dependencies with [Bundler](http://bundler.io/) (you should only need to do this once):
 
 ``` bash
 $ bundle install
@@ -30,16 +30,23 @@ $ bundle exec jekyll serve
 - Add, update or remove a post in the `_posts` directory.
 - To create a new post, make a new markdown file following the naming style `YYYY-MM-DD-title.md`
 - Add the following to the top of the file:
+  - `title:` **required**, the readable title of the blog post.
+  - `categories:` **required**, at least one category you would like to add to the blog post.
+   - To add multiple categories, simply put each one on a separate line with a dash before it.
+ - `author:` **required**, must be one of the author usernames listed in `_data/author.yml`. For more information, see below.
+- Example blog post:
 ``` yaml
   ---
   title: Title Here
-  categories: #optional
-    - Category1
-    - Category2
+  categories:
+    - category1
+    - category2
+    - category three
   author: name
   ---
 ```
-  - **IMPORTANT**: the value of `author` must be one of the author usernames listed in `_data/author.yml`
+  - **IMPORTANT:** you **MUST** have three dashes (e.g. `---`) on the top and bottom of the information above for *every post* (but not for the information below). See current posts if you are confused.
+
 - You can use [Markdown Formatting](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to style your content.
 
 ### Authors/Staff
@@ -93,3 +100,19 @@ $ bundle exec jekyll serve
       - title: "Master Classes"
         description: "Every now and then, INTERalliance will host a PHP Master class. This is a great way to get your feet wet with web development. If you are interested in making websites or contributing to the Mason ACM website then it is highly recommended that you go. INTERalliance may also have other master classes in Django or Rails."
 ```
+
+### CSS
+
+Mason ACM is styled using [Sass](http://sass-lang.com/). Sass is similar to CSS, however, it has more customizable properties (e.g. variables, nested properties, etc.). The stylesheets are divided into multiple files in the `_sass` directory, and automatically compiled in the `css` directory.
+
+### HTML
+
+For content that you can't edit using the above methods (e.g. the download VB6 page), you can edit the page itself. Note that familiarity with HTML, Jekyll, and Liquid tags. First, Check the file itself. If that doesn't contain the code snippet you're looking to edit, check the `_layouts` directory, using the `type:` value from the top of the page to find the correct file. If the code isn't in `_layouts`, then check `_includes`.
+
+#### Examples
+
+- `index.html` is a `_layouts/default` layout, which pulls from `_includes/navigation.html`.
+- `vb6/index.html` is a `_layouts/default` layout, which pulls from `_includes/navigation.html`.
+- `blog/index.html` pulls from `_includes/list-posts.html` and is a `_layouts/page` layout, which pulls from the `_layouts/default` page, which pulls from `_includes/navigation.html`.
+- All special interest group pages are a `_layouts/group` layout, which pulls from the `_layouts/default` page, which pulls from `_includes/navigation.html`.
+- All posts are a `_layouts/post` layout, which pulls from the `_layouts/default` page, which pulls from `_includes/navigation.html`.
