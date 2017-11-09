@@ -1,13 +1,24 @@
-- username: anna
-  name: "Anna Thompson"
-  position: Developer
+- username: andrew
+  name: "Andrew Sisson"
+  position: Events Director
   year: 2017
-  image: "/images/staff/name.png"
-  # site: https://daltoncraven.tech
+  image_path: "/images/staff/name.png"
   twitter: CloudCannonApp
-- username: james
-  name: "James Lopez"
-  position: Designer
+- username: michael
+  name: "Michael Van Leeuwen"
+  position: Tutoring Director
+  year: 2017
+  image_path: "/images/staff/name.png"
+  twitter: CloudCannonApp
+- username: fiona
+  name: "Fiona Xie"
+  position: Outreach &amp; Marketing Director
+  year: 2017
+  image_path: "/images/staff/name.png"
+  twitter: CloudCannonApp
+- username: dalton
+  name: "Dalton Craven"
+  position: Webmaster
   year: 2017
   image_path: "/images/staff/name.png"
   twitter: CloudCannonApp

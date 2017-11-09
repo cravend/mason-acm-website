@@ -1,6 +1,8 @@
 - name: networking
   groupname: "Networking"
-  leaders: andrew, dalton
+  leaders:
+    - andrew
+    - dalton
   icon: television
   description: "This page contains information about the LAN Party, which usually occurs twice a year, once on the last day before winter break, and once sometime after AP testing."
 

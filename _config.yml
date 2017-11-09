@@ -1,6 +1,6 @@
 # jekyll-seo-tag
 title: Mason ACM
-url: "https://acm.masonhackclub.tech"
+url: "http://new.masonacm.org/"
 email: wmhsacm@gmail.com
 description: William Mason High School's student chapter of the Association for Computing Machinery.
 twitter:
@@ -17,6 +17,8 @@ jekyll-archives:
     - "categories"
 
 # data page generator
+
+page_gen-dirs: true
 page_gen:
 - data: group
   name: name

@@ -4,7 +4,12 @@ layout: default
 <section class="hero diagonal">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 		<h2>{{ page.groupname }}</h2>
-		<p class="subtext">Run by {{ page.leaders }}</p>
+		<p class="subtext">Run by
+			{% for leader in page.leaders %}
+			{% assign lead = site.data.author | where: "username", leader | first %}
+			{{ lead.name }}
+			{% endfor %}
+		</p>
 	</div>
 </section>
 
