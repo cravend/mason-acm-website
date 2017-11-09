@@ -7,7 +7,13 @@ layout: default
 		<p class="subtext">Run by
 			{% for leader in page.leaders %}
 			{% assign lead = site.data.author | where: "username", leader | first %}
-			{{ lead.name }}
+			{% if lead.url %}
+				<a href="{{ lead.url }}">{{ lead.name }}</a>
+			{% elsif lead.twitter %}
+				<a href="{{ lead.twitter | prepend: 'https://twitter.com/' }}">{{ lead.name }}</a>
+			{% else %}
+				{{ lead.name }}
+			{% endif %}
 			{% endfor %}
 		</p>
 	</div>
