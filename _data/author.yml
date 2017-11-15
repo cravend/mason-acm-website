@@ -9,6 +9,9 @@
   position: Tutoring Director
   year: 2017
   image_path: "/images/staff/name.png"
+  url: https://mjvl.github.io
+  linkedin: michael-v-a294a7126
+  github: MJVL
   twitter: CloudCannonApp
 - username: fiona
   name: "Fiona Xie"
@@ -19,6 +22,8 @@
 - username: dalton
   name: "Dalton Craven"
   position: Webmaster
-  url: https://daltoncraven.tech
   year: 2017
   image_path: "/images/staff/name.png"
+  url: https://daltoncraven.tech
+  linkedin: dalton-craven
+  github: cravend
