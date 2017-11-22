@@ -20,9 +20,9 @@ jekyll-archives:
 
 page_gen-dirs: true
 page_gen:
-- data: group
+- data: teams
   name: name
-  dir: groups
+  dir: teams
 
 # general
 
