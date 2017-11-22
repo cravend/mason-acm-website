@@ -1,0 +1,26 @@
+---
+layout: page
+title: Special Interest Groups
+heading: Special Interest Groups
+subtitle: Keep up with the latest news.
+---
+
+<section class="diagonal">
+	<div class="text-container">
+    {% for group in site.data.group %}
+			<div class="groups split">
+				<div class="icons">
+					<!-- <a href="{{ site.baseurl }}/groups/{{ group.name }}"><img src="/images/{{ group.image }}" /></a> -->
+					<a href="{{ site.baseurl }}/groups/{{ group.name }}"><p><i class="fa fa-{{ group.icon }} fa-5x" aria-hidden="true"></i></p></a>
+				</div>
+				<div>
+					<h3>{{ group.groupname }}</h3>
+					<p>{{ group.description }}</p>
+					<p><a class="button alt" href="{{ site.baseurl }}/groups/{{ group.name }}">Learn More</a></p>
+				</div>
+			</div>
+			<br>
+			<br>
+		{% endfor %}
+	</div>
+</section>
