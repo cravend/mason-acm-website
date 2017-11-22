@@ -4,7 +4,6 @@
   year: 2017
   image_path: "/images/staff/name.png"
   github: andrewsisson
-  twitter: CloudCannonApp
 - username: michael
   name: "Michael Van Leeuwen"
   position: Tutoring Director
@@ -13,7 +12,6 @@
   url: https://mjvl.github.io
   linkedin: michael-v-a294a7126
   github: MJVL
-  twitter: CloudCannonApp
 - username: fiona
   name: "Fiona Xie"
   position: Outreach &amp; Marketing Director
@@ -21,7 +19,6 @@
   image_path: "/images/staff/name.png"
   linkedin: fiona-x-a37580138
   github: xiefiona
-  twitter: CloudCannonApp
 - username: dalton
   name: "Dalton Craven"
   position: Webmaster
