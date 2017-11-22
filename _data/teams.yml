@@ -1,0 +1,42 @@
+- name: events
+  teamname: "Events"
+  leaders: andrew
+  icon: television
+  description: "The events team plans and runs all events for Mason ACM. These include the annual LAN party, hour of code, robotics workshops, and more."
+  features:
+  - title: "When's the next event?"
+    description: "Look in the Mason ACM Schoology group for updates or calender posts."
+  - title: "Want to join?"
+    description: "Fill out the events team registration form: https://goo.gl/forms/eU7ZhzCfN2EoXJFr2"
+
+- name: tutoring
+  teamname: "Tutoring"
+  description: "The tutoring team consists of students from advanced programming backgrounds and courses. Students from this team are present in open labs and help any students requiring assistance."
+  leaders: michael
+  icon: code
+  features:
+  - title: "Need Help?"
+    description: "Show up during open labs on Tuesdays and Thursdays afterschool in Mr. Kummer's room. For help outside of normal hours email michaeljvanleeuwen@gmail.com."
+  - title: "Want to join?"
+    description: "Fill out the tutoring team registration form: https://goo.gl/forms/J7MCAgnp5tChc8wi1"
+
+- name: marketing-and-outreach
+  teamname: "Marketing & Outreach"
+  description: "The marketing & outreach team promotes evemts, contacts businesses, and promotes Mason ACM as a whole."
+  leaders: fiona
+  icon: question
+
+- name: business
+  teamname: "Business Teams"
+  description: "The business teams are teams consisting of a project manager, a front-end team, and when needed, a back-end team. They are dynamically created for local businesses that need project help. They pair experienced students with learners to faciliate student growth."
+  leaders:
+   - michael
+   - fiona
+  icon: question
+  features:
+  - title: "MSF Team"
+    description: "This team is currently revamping the website for the Mason City Schools Foundation."
+  - title: "Downtown Team"
+    description: "This team is currently revamping the website for the City of Downtown Mason."
+  - title: "Want to join?"
+    description: "When a new team is created application information will be posted to the Mason ACM Schoology group."
