@@ -3,6 +3,7 @@
   position: Events Director
   year: 2017
   image_path: "/images/staff/name.png"
+  github: andrewsisson
   twitter: CloudCannonApp
 - username: michael
   name: "Michael Van Leeuwen"
@@ -18,6 +19,8 @@
   position: Outreach &amp; Marketing Director
   year: 2017
   image_path: "/images/staff/name.png"
+  linkedin: fiona-x-a37580138
+  github: xiefiona
   twitter: CloudCannonApp
 - username: dalton
   name: "Dalton Craven"
