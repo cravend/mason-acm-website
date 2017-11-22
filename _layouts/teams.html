@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<section class="hero diagonal">
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<h2>{{ page.teamname }}</h2>
+		<p class="subtext">Run by
+			{% for leader in page.leaders %}
+			{% assign lead = site.data.author | where: "username", leader | first %}
+			{% if lead.url %}
+				<a href="{{ lead.url }}">{{ lead.name }}</a>
+			{% elsif lead.twitter %}
+				<a href="{{ lead.twitter | prepend: 'https://twitter.com/' }}">{{ lead.name }}</a>
+			{% else %}
+				{{ lead.name }}
+			{% endif %}
+			{% endfor %}
+		</p>
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<h2>About {{ page.teamname }}</h2>
+		<p>{{ page.description }}</p>
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<h2>{{ page.tagline }}</h2>
+		{% for feature in page.features %}
+			<h3>{{ feature.title }}</h3>
+			<p>{{ feature.description }}</p>
+		{% endfor %}
+	</div>
+</section>
