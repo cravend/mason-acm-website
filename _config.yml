@@ -35,6 +35,8 @@ plugins:
   - "jekyll-seo-tag"
   - "jekyll-archives"
   - "jekyll-paginate"
+  
+exclude: [vendor]
 
 defaults:
   - scope:
