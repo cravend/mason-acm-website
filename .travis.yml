@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.4.2
 
-install: gem install jekyll
-script: jekyll build
+install: bundle install
+script: bundle exec jekyll build
 
 # branch whitelist, only for master branch
 branches:
