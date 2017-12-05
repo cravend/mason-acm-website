@@ -1,6 +1,6 @@
 - name: events
   teamname: "Events"
-  leaders: andrew
+  leaders: "Andrew Sisson"
   icon: television
   description: "The events team plans and runs all events for Mason ACM. These include the annual LAN party, hour of code, robotics workshops, and more."
   features:
@@ -12,7 +12,7 @@
 - name: tutoring
   teamname: "Tutoring"
   description: "The tutoring team consists of students from advanced programming backgrounds and courses. Students from this team are present in open labs and help any students requiring assistance."
-  leaders: michael
+  leaders: "Michael Van Leeuwen"
   icon: code
   features:
   - title: "Need Help?"
@@ -23,15 +23,15 @@
 - name: marketing-and-outreach
   teamname: "Marketing & Outreach"
   description: "The marketing & outreach team promotes evemts, contacts businesses, and promotes Mason ACM as a whole."
-  leaders: fiona
+  leaders: "Fiona Xie"
   icon: question
 
 - name: business
   teamname: "Business Teams"
   description: "The business teams are teams consisting of a project manager, a front-end team, and when needed, a back-end team. They are dynamically created for local businesses that need project help. They pair experienced students with learners to faciliate student growth."
   leaders:
-   - michael
-   - fiona
+   - "Michael Van Leeuwen"
+   - "Fiona Xie"
   icon: question
   features:
   - title: "MSF Team"
