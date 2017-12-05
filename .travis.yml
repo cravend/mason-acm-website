@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.3.3
 
-install: bundle install
-script: bundle exec jekyll build
+install: bundle install && gem install html-proofer
+script: bundle exec jekyll build && htmlproofer ./_site
 
 # branch whitelist, only for master branch
 branches:
