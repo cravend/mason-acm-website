@@ -3,7 +3,7 @@ rvm:
 - 2.3.3
 
 install: bundle install && gem install html-proofer
-script: bundle exec jekyll build && htmlproofer --assume-extension --allow-hash-href --url-ignore "https://daltoncraven.tech" --file-ignore "/files/vb6.zip,./_site/files/vb6.zip" ./_site
+script: bundle exec jekyll build && htmlproofer --assume-extension --allow-hash-href ./_site
 
 # branch whitelist, only for master branch
 branches:
