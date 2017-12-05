@@ -36,8 +36,6 @@ plugins:
   - "jekyll-archives"
   - "jekyll-paginate"
   
-exclude: [vendor]
-
 defaults:
   - scope:
       path: ""
