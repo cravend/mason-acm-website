@@ -1,4 +1,3 @@
 .sass-cache/
 .bundle/
-files/
-_site/files/
+*.zip
