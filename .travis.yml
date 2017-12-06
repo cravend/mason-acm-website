@@ -6,9 +6,6 @@ rvm:
 install: bundle install && gem install html-proofer
 script: bundle exec jekyll build && htmlproofer --assume-extension --allow-hash-href ./_site
 
-after_success:
-  curl --ftp-create-dirs -T ./ -u $FTP_USER:$FTP_PASSWORD ftp://gauntlet.masoncomets.org/public_html/mason-acm-website/
-
 branches:
   only:
   - master
@@ -16,7 +13,5 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: Oia5bUDz98ZzVN7TT1fRnRIb78suR2TmU3sNKZDsmky4EM683w4s4PaqgKjYMiY3tLSi8ceOHP8+qkkaNszgtH8eSunyNr5P/PX4iWYay3OqShwOuvB+NKc/gD5ryfZ0P/JO2W8jmBOiEQfFyDoHknuOa2e1E79QeiXkjrRCYbfHAHomaYMz3TVHl9qOXjPw4E+HtaGQobY2R6kaDGyFskWNzuCMrlLPR1zSBv49c9wHFjArm5kLjd5Vt0l90H6vrfznfRPFchXJWGVmQgd5tx4j1fekMGpDdlN383LjM0E3LjHZfMCs0aZHedqi3ZIGUPUuWHev6V5J6VS038eQ2Su5mlPUXmFdoaJvbK2D/kfBSiHBYyw12I8As/xgfWfd/COcxNqvpWNONqB/U9ZrYpNqgZ0kFGyRWGpTJOcjAM0h+E5rxTGXWLsYhXB5FcBy/z0ULiRJben91U59auUaWDhnB/QWGonpHGIU27AyeS50MO87lo65/JX9/jrXC8oNaGy2xJuCbKNRoZxRFP5zXH0eRWwo78k0YbcV3gcBFi3flgvEESEzaGr+yt1xjKaBZPnN4wkppxwP6DAfJKJfNJ4sq7c163KOPdSIrH7vqiJOo6l2VgpuIRR600jJXsloVcXcVU4EL6gpSoJdsF/PGUabAmll2U1GQCx7CxZ3MaQ=
-  - secure: SXfLD0vdEPflb1RaUUxpaHMPFsA/kPMujApCG0jKp0VqLyOFSQGSzn28I7iNrgZZReFIvBiG6fTbY2jVApc1s/HAmb8Z7nIA/+kHt8kCUS478Nq2yKCApDeLkO2GFL6v8emg1XuUQ9CjKj9fQqrXqEoVDmJgHsIDQ6Pt5f2VOC6rvwRgSLBV5BMCFlLiy54wR95RHP8DP8P+RcHsbWugEBNrP/LUv1zp2egrnARfcoIr9iJCg93GxUXj0nE+0HvP0gwtjotHgGSdGL6GBUJbL5Z6rSESPMXJiY+cA47kSB56ZY4rgys6t1bdBALkhlG5U2ODtEnuOw50Do3r/pww67rrv0kO+OOdwpmmMdkGG6qL+eM5mSfZqoOpeBwOZAtxJ8A2/eMZb7iYtcqOi+jaXRDkDA7JgXc4QElw/beyJeFfeD/aF4o5sUQSH0rfP8A+lPrRNtUzWRkH6BxCjdKWV6/AqjH0xb8MiioNHBcpDdy4/eC9956qkUuohJehrQFMNybiS2qZ8gCV8nUNQSuDyZr7xeB1nBjyJTQDhDnPA6VS0wypB2O67OdBy4155dnCzU950Gc1YI8UGkP7WW4qZjWsYwX+QlUhJYuw8Jq1zWXb1dfae6mLPezq5KmO1cDQU9cAstDM7SmfzU5Hy8X2iKQn3921l5g4doL4IVc+m9w=
 
 sudo: false
