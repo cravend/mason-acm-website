@@ -1,7 +1,7 @@
 - name: events
   teamname: "Events"
   leaders: "Andrew Sisson"
-  icon: television
+  icon: calendar
   description: "The events team plans and runs all events for Mason ACM. These include the annual LAN party, hour of code, robotics workshops, and more."
   features:
   - title: "When's the next event?"
@@ -24,15 +24,15 @@
   teamname: "Marketing & Outreach"
   description: "The marketing & outreach team promotes events, contacts businesses, and promotes Mason ACM as a whole."
   leaders: "Fiona Xie"
-  icon: question
+  icon: line-chart
 
 - name: business
-  teamname: "Business Teams"
+  teamname: "Business"
   description: "The business teams are teams consisting of a project manager, a front-end team, and when needed, a back-end team. They are dynamically created for local businesses that need project help. They pair experienced students with learners to faciliate student growth."
   leaders:
    - "Michael Van Leeuwen"
    - "Fiona Xie"
-  icon: question
+  icon: briefcase
   features:
   - title: "MSF Team"
     description: "This team is currently revamping the website for the Mason City Schools Foundation."
