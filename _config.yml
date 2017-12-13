@@ -2,7 +2,10 @@
 title: Mason ACM
 url: "http://new.masonacm.org/"
 email: wmhsacm@gmail.com
-description: William Mason High School's student chapter of the Association for Computing Machinery.
+description: >-
+  Mason ACM is part of an international organization, ACM.
+  ACM is an organization for computing professionals to deliver
+  resources that advance computing as a science and a profession.
 twitter:
   username: mason_acm
 logo: /images/logo.png
@@ -22,6 +25,7 @@ page_gen-dirs: true
 page_gen:
 - data: teams
   name: name
+  title: teamname
   dir: teams
 
 # general
