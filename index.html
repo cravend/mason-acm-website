@@ -5,8 +5,8 @@ layout: default
 
 <section class="hero diagonal">
 	<div class="container">
-		<h2>Mason ACM</h2>
-		<p class="subtext">Mason ACM is part of an international organization, ACM. ACM is an organization for computing professionals to deliver resources that advance computing as a science and a profession.</p>
+		<h2>{{ site.title }}</h2>
+		<p class="subtext">{{ site.description }}</p>
 	</div>
 </section>
 
@@ -22,19 +22,6 @@ layout: default
 <section class="diagonal alternate">
 	<div class="container">
 		<h2>Teams</h2>
-		{% for team in site.data.teams %}
-			<div class="groups split">
-				<div class="icons">
-					<a href="{{ site.baseurl }}/teams/{{ team.name }}"><p><i class="fa fa-{{ team.icon }} fa-5x" aria-hidden="true"></i></p></a>
-				</div>
-				<div>
-					<a href="{{ site.baseurl }}/teams/{{ team.name }}"><h3>{{ team.teamname }}</h3></a>
-					<p>{{ team.description }}</p>
-					<p><a class="button alt" href="{{ site.baseurl }}/teams/{{ team.name }}">Learn More</a></p>
-				</div>
-			</div>
-			<br>
-			<br>
-		{% endfor %}
+		{% include list-teams.html %}
 	</div>
 </section>

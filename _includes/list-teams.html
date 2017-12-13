@@ -1,0 +1,14 @@
+{% for team in site.data.teams %}
+  <div class="groups split">
+    <div class="icons">
+      <a href="{{ site.baseurl }}/teams/{{ team.name }}"><p><i class="fa fa-{{ team.icon }} fa-block fa-5x" aria-hidden="true"></i></p></a>
+    </div>
+    <div>
+      <a href="{{ site.baseurl }}/teams/{{ team.name }}"><h3>{{ team.teamname }}</h3></a>
+      <p>{{ team.description }}</p>
+      <p><a class="button alt" href="{{ site.baseurl }}/teams/{{ team.name }}">Learn More</a></p>
+    </div>
+  </div>
+  <br>
+  <br>
+{% endfor %}

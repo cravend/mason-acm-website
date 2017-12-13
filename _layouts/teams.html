@@ -16,11 +16,11 @@ layout: default
 
 <section class="diagonal patterned">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
-		<h2>About {{ page.teamname }}</h2>
+		<h2>About Us</h2>
 		<p>{{ page.description }}</p>
 	</div>
 </section>
-
+{% if page.features[0] %}
 <section class="diagonal">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 		<h2>{{ page.tagline }}</h2>
@@ -30,3 +30,4 @@ layout: default
 		{% endfor %}
 	</div>
 </section>
+{% endif %}

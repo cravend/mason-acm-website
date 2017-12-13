@@ -7,20 +7,6 @@ subtitle: Details about what you can do as a part of Mason ACM.
 
 <section class="diagonal">
 	<div class="text-container">
-    {% for team in site.data.teams %}
-			<div class="groups split">
-				<div class="icons">
-					<!-- <a href="{{ site.baseurl }}/groups/{{ group.name }}"><img src="/images/{{ group.image }}" /></a> -->
-					<a href="{{ site.baseurl }}/teams/{{ team.name }}"><p><i class="fa fa-{{ team.icon }} fa-5x" aria-hidden="true"></i></p></a>
-				</div>
-				<div>
-					<h3><a href="{{ site.baseurl }}/teams/{{ team.name }}">{{ team.teamname }}</a></h3>
-					<p>{{ team.description }}</p>
-					<p><a class="button alt" href="{{ site.baseurl }}/teams/{{ team.name }}">Learn More</a></p>
-				</div>
-			</div>
-			<br>
-			<br>
-		{% endfor %}
+		{% include list-teams.html %}
 	</div>
 </section>
