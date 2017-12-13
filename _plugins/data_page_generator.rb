@@ -27,9 +27,10 @@ module Jekyll
     # - `dir` is the default output directory
     # - `data` is the data defined in `_data.yml` of the record for which we are generating a page
     # - `name` is the key in `data` which determines the output filename
+    # - `name` is the key in `data` which determines the output title
     # - `template` is the name of the template for generating the page
     # - `extension` is the extension for the generated file
-    def initialize(site, base, index_files, dir, data, name, template, extension)
+    def initialize(site, base, index_files, dir, data, name, title, template, extension)
       @site = site
       @base = base
 
@@ -49,7 +50,7 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), template + ".html")
-      self.data['title'] = data[name]
+      self.data['title'] = data[title]
       # add all the information defined in _data for the current record to the
       # current page (so that we can access it with liquid tags)
       self.data.merge!(data)
@@ -76,6 +77,7 @@ module Jekyll
         data.each do |data_spec|
           template = data_spec['template'] || data_spec['data']
           name = data_spec['name']
+          title = data_spec['title']
           dir = data_spec['dir'] || data_spec['data']
           extension = data_spec['extension'] || "html"
 
@@ -92,7 +94,7 @@ module Jekyll
             end
             records = records.select { |r| r[data_spec['filter']] } if data_spec['filter']
             records.each do |record|
-              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, template, extension)
+              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, title, template, extension)
             end
           else
             puts "error. could not find template #{template}" if not site.layouts.key? template
