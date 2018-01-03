@@ -6,6 +6,7 @@ description: >-
   Mason ACM is part of an international organization, ACM.
   ACM is an organization for computing professionals to deliver
   resources that advance computing as a science and a profession.
+meetings: Mason ACM meets in Mr. Kummer's room (B109) on Tuesdays and Thursdays, starting at 2:20pm.
 twitter:
   username: mason_acm
 logo: /images/logo.png
@@ -13,11 +14,6 @@ social:
   links:
     - https://twitter.com/mason_acm
     - https://github.com/cravend/mason-acm-website
-
-# jekyll-archives
-jekyll-archives:
-  enabled:
-    - "categories"
 
 # data page generator
 
@@ -30,15 +26,8 @@ page_gen:
 
 # general
 
-paginate: 10
-paginate_path: "/blog/:num/"
-permalink: "/blog/:title"
-
 plugins:
-  - "jekyll-feed"
   - "jekyll-seo-tag"
-  - "jekyll-archives"
-  - "jekyll-paginate"
 
 defaults:
   - scope:
