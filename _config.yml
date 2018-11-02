@@ -3,7 +3,7 @@ title: Mason ACM
 url: "https://masonacm.org"
 email: wmhsacm@gmail.com
 description: >-
-  Mason ACM is part of an international organization, ACM.
+  Mason ACM is part of an international organization: ACM.
   ACM is an organization for computing professionals to deliver
   resources that advance computing as a science and a profession.
 twitter:
@@ -12,7 +12,7 @@ logo: /images/logo.png
 social:
   links:
     - https://twitter.com/mason_acm
-    - https://github.com/cravend/mason-acm-website
+    - https://github.com/TheMasonACM/mason-acm-website
 
 # jekyll-archives
 jekyll-archives:
