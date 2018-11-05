@@ -1,4 +1,4 @@
-# Mason ACM [![Build Status](https://travis-ci.org/TheMasonACM/mason-acm-website.svg?branch=master)](https://travis-ci.org/TheMasonACM/mason-acm-website)
+# Mason ACM
 
 This is the official website for [Mason ACM](http://masonacm.org).
 
